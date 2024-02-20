@@ -1,0 +1,41 @@
+{% extends "initial.html" %}
+
+{% block title %}Login{% endblock  %}
+
+{% block body %}
+    <div class="bg-image">
+        <div class="signup-container">
+            <div class="mb-3">
+                <h1>Login</h1>
+                <h2>Unlimited movies, TV shows, and more.</h2>
+            </div>
+
+            <div>
+                <style>
+                    h5{
+                        color: red;
+                    }
+                </style>
+                {% for message in messages %}
+                <h5>{{message}}</h5>
+                {% endfor %}
+            </div>
+
+
+            <form action="" method="post">
+                {% csrf_token %}
+                
+                <input class="rounded-pill" type="text" name="username" placeholder="Username" />
+                <input class="rounded-pill" type="password" name="password" placeholder="Password" />
+                <button style="color:white" type="submit" class="signup-btn rounded-pill">Login</button>
+            </form>
+            <div class="help-text" align="center">
+                <span>Ready to watch? Enter your email to create or restart your membership.</span>
+                <br>
+                <br>
+                <span>Dont have an account? <a href="{% url "signup" %}">Signup</a></span>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
