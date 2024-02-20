@@ -5,14 +5,14 @@
 {% block body %}
     <hr>
 
-    <section class="py-10 px-5">
+    <section class="py-10 px-5 overflow-x-auto overflow-y-hidden">
     
         <div align="center">
             <h2 class="text-xl mb-5">
                 Search Result for '{{search_term}}'
             </h2>
         </div>
-        <div class="flex space-x-5 overflow-x-auto">
+        <div class="flex space-x-5">
 
             {% for movie in movies reversed %}
             <div class="w-40 h-64 flex-shrink-0 film-card"
