@@ -16,7 +16,7 @@ Therefore, Blueflix is a project that dreams and will continue to dream big, as 
 
 ## Deployment
 
-### link
+### https://blueflix-dev-jhtb.3.us-1.fl0.io/
 
 ## Technologies
 
