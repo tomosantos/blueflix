@@ -37,7 +37,7 @@ Therefore, Blueflix is a project that dreams and will continue to dream big, as 
 - Run the application:
 
 ```
-$ python run.py
+$ python manage.py runserver
 ```
 - Enjoy ;)
 
