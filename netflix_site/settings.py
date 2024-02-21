@@ -132,8 +132,6 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATIC_CONTENT_TYPE = 'text/css'
-
 STATICFILES_DIRS =  [
     os.path.join(BASE_DIR, 'static'),
 ]
